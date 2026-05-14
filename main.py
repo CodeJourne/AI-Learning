@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "05624eb50fd5405da93c5f8cfd1efd92.hhK4DWG7wyiZ3g5Y"
+API_KEY = "your's API_KEY"
 
 url = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
