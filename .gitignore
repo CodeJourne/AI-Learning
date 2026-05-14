@@ -1,0 +1,75 @@
+# ======================
+# PyCharm 配置文件夹
+# ======================
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ======================
+# Python 缓存和编译文件
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ======================
+# 虚拟环境
+# ======================
+venv/
+env/
+nlpbase/       # 如果你用 Anaconda 或自定义环境名称
+
+# ======================
+# 日志和临时文件
+# ======================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ======================
+# 操作系统生成文件
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Jupyter Notebook checkpoints
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# pip cache
+# ======================
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ======================
+# Coverage / Testing
+# ======================
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ======================
+# 编辑器临时文件
+# ======================
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+
+# ======================
+# 打包 / 分发文件
+# ======================
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.wheel
