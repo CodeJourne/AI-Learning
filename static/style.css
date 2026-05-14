@@ -1,0 +1,131 @@
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #0f111a;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+/* 主聊天容器 */
+.chat-container {
+    width: 480px;
+    height: 700px;
+    background: linear-gradient(145deg, #1f2233, #181a28);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 聊天区 */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 聊天气泡 */
+.message {
+    padding: 12px 18px;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* 用户 */
+.user {
+    background: #4e88ff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+/* AI */
+.ai {
+    background: #2f313e;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+/* 输入区 */
+.input-box {
+    display: flex;
+    padding: 15px;
+    background: #12141f;
+}
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #1e1f2e;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+}
+button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #4e88ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #3a6edd;
+}
+
+/* 滚动条美化 */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background: #4e88ff;
+    border-radius: 3px;
+}
+
+/* Markdown 支持 (Prism 高亮) */
+code, pre {
+    font-family: 'Fira Code', monospace;
+    background: #1e1f2e;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+pre {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* 头像 */
+.message::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.user::before {
+    background: url('https://img.icons8.com/color/48/000000/user-male-circle.png') no-repeat center/cover;
+    right: -36px;
+}
+.ai::before {
+    background: url('https://img.icons8.com/fluency/48/000000/robot.png') no-repeat center/cover;
+    left: -36px;
+}
